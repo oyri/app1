@@ -5,7 +5,7 @@ on:
     paths:
       - 'src/**'
       - '.github/**'
-      - '!src/main/resources/application-[dev|docker].yml'
+      - '!src/main/resources/application-[d*].yml'
 
 jobs:
   build:
