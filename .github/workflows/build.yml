@@ -1,0 +1,17 @@
+name: ignore-paths testing
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - '.github/**'
+      - '!src/resources/application.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:       
+      - name: println
+        run: |
+          echo "hello"
+      
